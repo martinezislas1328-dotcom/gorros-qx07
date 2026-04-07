@@ -1,0 +1,146 @@
+:root {
+    /* --- PALETA AJUSTADA CON LOS HEXADECIMALES DE LA IMAGEN --- */
+    --vino-profundo: #850E35;    /* Vino tinto de la imagen 14 */
+    --rosa-fuerte: #EE6983;      /* Rosa fuerte/fucsia de la imagen 14 */
+    --rosa-medio: #FFC4C4;       /* Rosa pastel suave de la imagen 14 */
+    --rosa-suave: #FFC4C4;       /* Usamos el mismo rosa pastel para la tarjeta */
+    --hueso-fondo: #FCF5EE;      /* El hueso exacto de la imagen 14 */
+    --texto-negro: #1a1a1a;
+    --verde-wa: #2ecc71;         
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: var(--hueso-fondo); /* Fondo Hueso #FCF5EE */
+    color: var(--texto-negro);
+}
+
+.promo-banner {
+    background: var(--rosa-fuerte); /* Rosa fuerte para que llame la atención */
+    color: white;   
+    padding: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--vino-profundo); 
+}
+
+.header-morado {
+    background-color: var(--vino-profundo); 
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--vino-profundo) 0%, #610a26 100%);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+.subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.container { max-width: 1200px; margin: auto; padding: 50px 20px; }
+
+.main-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--vino-profundo); 
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px; }
+
+/* --- TARJETAS --- */
+.card {
+    background: var(--rosa-suave); /* Fondo Rosa Pastel #FFC4C4 */
+    transition: 0.4s ease;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(133, 14, 53, 0.1); 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(133, 14, 53, 0.15); 
+}
+
+.img-box {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background: var(--hueso-fondo); /* Fondo de imagen en hueso para que resalte el producto */
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--rosa-suave);
+}
+
+.img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+.card:hover img { transform: scale(1.05); }
+
+/* BADGE DE STOCK */
+.badge {
+    position: absolute; top: 15px; right: 15px;
+    padding: 7px 14px; font-size: 0.65rem; font-weight: 700;
+    color: white; border-radius: 4px; letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.badge-disponible { background-color: var(--rosa-fuerte); } 
+.badge-agotado { background-color: var(--vino-profundo); } 
+
+.info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    margin: 10px 0;
+    color: var(--texto-negro);
+}
+
+.price {
+    font-size: 1.15rem;
+    color: var(--vino-profundo); 
+    font-weight: 600;
+}
+
+.btn-pedido {
+    background: var(--verde-wa); 
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-pedido:hover {
+    background: #27ae60;
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+}
+
+.footer-morado {
+    background: var(--vino-profundo); 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid var(--rosa-fuerte); 
+}
+
+.whatsapp-btn { position: fixed; bottom: 30px; right: 30px; width: 60px; z-index: 1000; }
+.whatsapp-btn img { width: 100%; }
