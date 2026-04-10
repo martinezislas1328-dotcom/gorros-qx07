@@ -15,7 +15,8 @@
             <div class="header-nav-links">
                 <div class="dropdown" style="position: relative;">
                     <a href="#" class="nav-link-main">COLECCIONES <i class="fa-solid fa-chevron-down" style="font-size: 0.6rem; margin-left:5px;"></i></a>
-                    <div class="dropdown-content" id="menu-colecciones-dinamico"></div>
+                    <div class="dropdown-content" id="menu-colecciones-dinamico">
+                        </div>
                 </div>
 
                 <div class="dropdown" style="position: relative;">
@@ -57,25 +58,27 @@
     </section>
 
     <div class="main-content">
-        <section class="promo-split reveal" id="identity-box">
-            <div class="promo-image">
-                <div class="slider-arrows">
-                    <button onclick="prevAnuncio()" class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button onclick="nextAnuncio()" class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="promo-container-wrapper reveal">
+            <button onclick="prevIdentidad()" class="arrow-btn arrow-left-outer"><i class="fa-solid fa-chevron-left"></i></button>
+            <button onclick="nextIdentidad()" class="arrow-btn arrow-right-outer"><i class="fa-solid fa-chevron-right"></i></button>
+
+            <section class="promo-split" id="identity-box">
+                <div class="promo-image">
+                    <img src="" id="identidad-img" alt="Beneficios">
+                    <video id="identidad-video" muted playsinline></video>
                 </div>
-                <img src="https://via.placeholder.com/450x350/ffffff/ffffff" id="identidad-img">
-            </div>
-            <div class="promo-details">
-                <span class="tag-anuncio" id="identidad-tag">OFERTA LIMITADA</span>
-                <h2 id="identidad-titulo">Modelos de Temporada</h2>
-                <p id="identidad-desc">Descubre nuestra selección de diseños exclusivos con descuentos especiales.</p>
-                <div class="slider-dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+                <div class="promo-details">
+                    <span class="tag-anuncio" id="identidad-tag">TU ESTILO</span>
+                    <h2 id="identidad-titulo">Diseños a tu Medida</h2>
+                    <p id="identidad-desc">Cargando información...</p>
+                    <div class="slider-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="squad-section reveal">
             <span class="tag-accent">#QX076SQUAD</span>
