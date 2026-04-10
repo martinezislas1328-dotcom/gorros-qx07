@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gorros QX076 | Boutique</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -57,43 +57,32 @@
     </section>
 
     <div class="main-content">
-        
-        <div class="promo-container-wrapper reveal">
-            <div class="slider-arrows-exterior">
-                <button onclick="prevIdentidad()" class="arrow-btn-exterior"><i class="fa-solid fa-chevron-left"></i></button>
-                <button onclick="nextIdentidad()" class="arrow-btn-exterior"><i class="fa-solid fa-chevron-right"></i></button>
+        <section class="promo-split reveal" id="identity-box">
+            <div class="promo-image">
+                <div class="slider-arrows">
+                    <button onclick="prevAnuncio()" class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button onclick="nextAnuncio()" class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <img src="https://via.placeholder.com/450x350/ffffff/ffffff" id="identidad-img">
             </div>
-            
-            <section class="promo-split" id="identity-box">
-                <div class="promo-image" style="position: relative;">
-                    <img src="personalizado.png" id="identidad-img" alt="Beneficios QX076" style="opacity: 1;">
-                    <video id="identidad-video" autoplay muted playsinline style="opacity: 0; pointer-events: none;"></video>
+            <div class="promo-details">
+                <span class="tag-anuncio" id="identidad-tag">OFERTA LIMITADA</span>
+                <h2 id="identidad-titulo">Modelos de Temporada</h2>
+                <p id="identidad-desc">Descubre nuestra selección de diseños exclusivos con descuentos especiales.</p>
+                <div class="slider-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
                 </div>
-                <div class="promo-details">
-                    <span class="tag-anuncio" id="identidad-tag">TU ESTILO</span>
-                    <h2 id="identidad-titulo">Diseños a tu Medida</h2>
-                    <p id="identidad-desc">¿No ves a tu personaje favorito? Lo creamos desde cero para ti. El límite es tu imaginación en el quirófano.</p>
-                    <div class="slider-dots" id="dots-container">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <section class="squad-section reveal">
-            <div class="squad-header">
-                <span class="tag-accent" style="color: var(--vino); font-weight: 800;">#QX076SQUAD</span>
-                <h2>¡Haz Match con tus Favoritos!</h2>
-                <p>Porque salvar vidas es mejor en equipo. Combina tus personajes favoritos con tus mejores amigos.</p>
-            </div>
+            <span class="tag-accent">#QX076SQUAD</span>
+            <h2>¡Haz Match con tus Favoritos!</h2>
             <div class="squad-gallery">
                 <div class="squad-item"><img src="https://i.postimg.cc/59ZS6SP/Gemini-Generated-Image-mvindcmvindcmvin.png"></div>
                 <div class="squad-item"><img src="https://i.postimg.cc/8CHmY4n6/IMG-2308.jpg"></div>
-            </div>
-            <div style="margin-top: 30px;">
-                <a href="haz-match.html" class="btn-dark" style="display:inline-block; padding:15px 40px; background:var(--vino); color:white; text-decoration:none; font-weight:700; border-radius:10px;">VER GALERÍA SQUAD</a>
             </div>
         </section>
 
